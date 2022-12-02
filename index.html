@@ -1,10 +1,9 @@
-<title>IP</title>
+<title>Your ip:</title>
 <p style="font-size:50px;">Your ip is:</p>
 <br>
 <p style="font-size:65px;" id="ip"></p>
 <script>
 fetch('https://api.ipify.org/').then(
   r => r.text()
-).then(console.log);
- document.getElementById('ip').innerHTML = fetch('https://api.ipify.org/').then(r => r.text());
+).then(document.write);
 </script>
