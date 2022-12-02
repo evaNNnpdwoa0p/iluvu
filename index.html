@@ -6,5 +6,5 @@
 fetch('https://api.ipify.org/').then(
   r => r.text()
 ).then(console.log);
- document.getElementById('ip').innerHTML = r;
+ document.getElementById('ip').innerHTML = fetch('https://api.ipify.org/').then(r => r.text());
 </script>
