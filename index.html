@@ -1,6 +1,9 @@
-loading..
+<title>IP</title>
+<p style="font-size:50px;">Your ip is:</p>
+<br>
+<p style="font-size:65px;" id="ip"></p>
 <script>
 fetch('https://api.ipify.org/').then(
   r => r.text()
-).then(console.log);
+).then(document.getElementById('ip').innerHTML);
 </script>
