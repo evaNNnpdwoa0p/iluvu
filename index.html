@@ -1,4 +1,6 @@
 loading..
 <script>
-document.write(data.ip)
+fetch('https://api.ipify.org/').then(
+  r => r.text()
+).then(console.log);
 </script>
